@@ -1,7 +1,7 @@
 import Image from "next/image";
 import s from "./FlowerButton.module.scss";
 
-import flower from "@/images/flower-rose.svg";
+import flower from "@/assets/svg/flower-rose.svg";
 import { FC } from "react";
 
 type FlowerButtonProps = {
@@ -20,7 +20,7 @@ const FlowerButton: FC<FlowerButtonProps> = ({ text = "Заказать" }) => {
       />
     </button>
   );
-}
+};
 
 export default FlowerButton;
 
