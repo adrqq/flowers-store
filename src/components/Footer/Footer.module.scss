@@ -1,0 +1,83 @@
+@import "../../utils/vars.scss";
+
+.footer {
+  background-color: $main-gray;
+  display: flex;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+
+  &__info {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+    flex-direction: row;
+  }
+
+  &__logo {
+    object-fit:cover;
+    width: 200px;
+    height: 200px;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+    &__container {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    &__title {
+      font-size: 18px;
+      font-weight: 700;
+      line-height: 18px;
+      letter-spacing: 0%;
+      text-align: center;
+      color: $white;
+
+      margin-bottom: 38px;
+    }
+
+    &__item {
+      font-size: 16px;
+      font-weight: 300;
+      line-height: 18px;
+      letter-spacing: 0%;
+      text-align: left;
+
+      color: $white;
+      text-decoration: none;
+    }
+  }
+
+  &__bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: $white;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 18px;
+    letter-spacing: 0%;
+    text-align: left;
+  }
+
+  &__payment {
+    &__text {
+      margin-right: 40px;
+    }
+  }
+}
+
+.row {
+  margin: 20px 0;
+  background-color: $burgundy;
+  width: 100%;
+  height: 1px;
+}

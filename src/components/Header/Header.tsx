@@ -9,6 +9,8 @@ export default function Header(props: HeaderProps) {
   return (
     <header className={s.header}>
       <CardItem />
+      <CardItem />
+      <CardItem />
     </header>
   );
 }

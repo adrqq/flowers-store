@@ -34,6 +34,8 @@
     display: flex;
     flex-direction: column;
 
+    position: relative;
+
     gap: 30px;
   }
 
@@ -46,7 +48,7 @@
   }
 
   &__title {
-    color: $main-font-gray;
+    color: $main-gray;
     font-size: 18px;
     font-weight: 300;
     line-height: 18px;
@@ -85,3 +87,5 @@
   height: 1px;
   background-color: #828282;
 }
+
+
