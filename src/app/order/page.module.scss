@@ -1,0 +1,66 @@
+@import '../../utils/vars.scss';
+
+$gray: #999999;
+$dark-gray: #333333;
+$blue: #0086e4;
+
+$primary-color: $burgundy;
+$border-color: #dddddd;
+
+
+// Typography
+$body-font-size: 14px;
+$body-color: $dark-gray;
+
+// Input
+$input-height: 40px;
+
+// Button
+$button-height: $input-height;
+
+.input__group {
+  margin: 100px;
+
+  position: relative;
+  &__label {
+    display: block;
+    position: absolute;
+    top: 0;
+    // to keep the position center
+    line-height: $input-height;
+    color: #aaa;
+    left: 5px;
+    padding: 0 5px;
+    transition: line-height 200ms ease-in-out, font-size 200ms ease-in-out,
+      top 200ms ease-in-out;
+    // firefox fix
+    pointer-events: none;
+  }
+  &__input {
+    width: 100%;
+    height: $input-height;
+    border: 1px solid $border-color;
+    border-radius: 3px;
+    padding: 0 10px;
+    // there must a required prop in input
+    // &:valid,
+    // need to add placeholder
+    &:not(:placeholder-shown),
+    &:focus {
+      + label {
+        background-color: white;
+        line-height: 10px;
+        opacity: 1;
+        font-size: 10px;
+        top: -5px;
+      }
+    }
+    &:focus {
+      outline: none;
+      border: 1px solid $primary-color;
+      + label {
+        color: $primary-color;
+      }
+    }
+  }
+}
