@@ -1,0 +1,16 @@
+.basket {
+  margin-top: 50px;
+
+  margin-bottom: 100px;
+
+  display: flex;
+  justify-content: center;
+
+  gap: 25px;
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+}

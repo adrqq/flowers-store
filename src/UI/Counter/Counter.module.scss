@@ -1,0 +1,32 @@
+@import "../../utils/vars.scss";
+
+.counter {
+  border: 1px solid $burgundy;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  &__button {
+    border: none;
+    width: 40px;
+    height: 40px;
+  }
+
+  &__logo {
+    margin-top: 4px;
+
+    &_plus {
+      rotate: 180deg;
+    }
+  }
+
+  &__count {
+    // margin-top: 4px;
+    color: $main-gray;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0%;
+  }
+}

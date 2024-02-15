@@ -1,0 +1,68 @@
+@import "../../utils/vars.scss";
+
+.basket {
+  &__order {
+    width: 415px;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+    border: 1px solid $burgundy;
+  }
+
+  &__title {
+    font-size: 36px;
+    color: $burgundy;
+    font-weight: 700;
+    line-height: 18px;
+    letter-spacing: 0%;
+    text-align: left;
+  }
+
+  &__info {
+    display: flex;
+    justify-content: space-between;
+    gap: 150px;
+
+    &__container {
+      display: flex;
+      flex-direction: column;
+      gap: 32px;
+    }
+
+    &__text {
+      font-size: 16px;
+      font-weight: 300;
+      line-height: 18px;
+      color: $light-gray;
+    }
+
+    &__price {
+      font-size: 16px;
+      font-weight: 300;
+      line-height: 18px;
+      color: $main-gray;
+    }
+  }
+
+  &__total {
+    display: flex;
+    gap: 110px;
+
+    &__text {
+      color: $main-gray;
+      font-size: 24px;
+      font-weight: 300;
+      line-height: 18px;
+    }
+
+    &__price {
+      color: $main-gray;
+      font-size: 24px;
+      font-weight: 700;
+      line-height: 18px;
+    }
+  }
+}

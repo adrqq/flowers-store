@@ -1,0 +1,42 @@
+@import "../../utils/vars.scss";
+
+.basket {
+  display: flex;
+  align-items: center;
+
+  border: 1px solid $burgundy;
+
+  padding: 0 63px;
+
+  gap: 63px;
+  // width: 979px;
+  // height: 156px;
+
+  &__image {
+    width: 100px;
+    height: 156px;
+  }
+
+  &__name {
+    color: $main-gray;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 18px;
+    letter-spacing: 0%;
+  }
+
+  &__price {
+    color: $main-gray;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 18px;
+    letter-spacing: 0%;
+  }
+
+  &__total {
+    color: $main-gray;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 0%;
+  }
+}

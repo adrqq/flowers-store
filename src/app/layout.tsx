@@ -19,8 +19,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={raleway.className}>
-        {children}
-        <Footer />
+        <div className="flex_body">
+          {children}
+          <Footer />
+        </div>
       </body>
     </html>
   );
