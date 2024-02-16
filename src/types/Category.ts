@@ -1,9 +1,10 @@
 export interface Category {
   name: string,
   subcategories: Subcategory[],
+  index?: number
 }
 
-interface Subcategory {
+export interface Subcategory {
   name: string,
   link: string,
 }
