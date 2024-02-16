@@ -3,6 +3,7 @@ import { Raleway } from "next/font/google";
 import "./globals.css";
 
 import Footer from "@/components/Footer";
+import Header from "@/components/Header/Header";
 
 const raleway = Raleway({ subsets: ["latin"] });
 
@@ -20,9 +21,10 @@ export default function RootLayout({
     <html lang="en">
       <body className={raleway.className}>
         <div className="flex_body">
+          <Header />
           {children}
-          <Footer />
         </div>
+        <Footer />
       </body>
     </html>
   );
