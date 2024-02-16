@@ -3,6 +3,7 @@
 .basket {
   display: flex;
   align-items: center;
+  
 
   border: 1px solid $burgundy;
 
@@ -15,6 +16,8 @@
   &__image {
     width: 100px;
     height: 156px;
+
+  
   }
 
   &__name {

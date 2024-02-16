@@ -62,5 +62,8 @@ $button-height: $input-height;
         color: $primary-color;
       }
     }
+    &:hover {
+      border: 1px solid $primary-color;
+    }
   }
 }

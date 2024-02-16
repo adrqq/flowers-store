@@ -1,9 +1,14 @@
-import OrderInput from '@/UI/OrderInput/page';
-import styles from './page.module.scss';
+import OrderInput from "@/UI/OrderInput/page";
+import s from "./page.module.scss";
+import DatePicker from "@/UI/DatePicker";
 
 const OrderPage = () => {
   return (
-    <OrderInput />
+    <div className={s.order}>
+      <OrderInput />
+
+      <DatePicker />
+    </div>
   );
 };
 
