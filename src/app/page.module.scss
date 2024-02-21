@@ -1,9 +1,6 @@
 .main {
-  // later will be justified for responsive design
-  max-width: 1200px;
-  margin: 0 auto;
-
-  height: 100%;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
 }
