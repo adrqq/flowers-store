@@ -1,0 +1,94 @@
+@import "../../utils/vars.scss";
+
+.dd {
+  width: max-content;
+  position: relative;
+
+  &__button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    &__text {
+      color: $main-gray;
+      font-size: 16px;
+      font-weight: 800;
+      letter-spacing: 0%;
+      text-align: center;
+    }
+
+    &__img {
+      margin-left: 10px;
+      transition: 0.2s;
+
+      &__open {
+        transform: rotate(-180deg);
+      }
+    }
+  }
+
+  &__panel {
+    position: absolute;
+    top: 24px;
+
+    display: flex;
+    flex-direction: column;
+
+    width: 240px;
+    box-sizing: border-box;
+    border: 2px solid $burgundy;
+    box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 0.1);
+    background: rgb(255, 255, 255);
+
+    &__button {
+      width: 100%;
+      padding: 15px;
+
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+
+      &__text {
+        color: $main-gray;
+        font-size: 16px;
+        font-weight: 400;
+        letter-spacing: 0%;
+        text-align: left;
+      }
+
+      &__open {
+        background: $burgundy;
+      }
+
+      &__icon {
+        transition: 0.2s;
+
+        &__open {
+          transform: rotate(-180deg);
+        }
+      }
+
+      &:hover {
+        color: $burgundy;
+        font-weight: 500;
+      }
+    }
+  }
+
+  &__panel_inner {
+    position: absolute;
+    left: 250px;
+    top: 30px;
+
+    display: flex;
+    flex-direction: column;
+
+    width: 240px;
+    box-sizing: border-box;
+    border: 2px solid $burgundy;
+    box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 0.1);
+    background: rgb(255, 255, 255);
+  }
+}

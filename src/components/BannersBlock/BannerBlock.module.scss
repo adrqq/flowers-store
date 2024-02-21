@@ -1,0 +1,175 @@
+@import "../../utils/vars.scss";
+
+.bb {
+  margin-bottom: 115px;
+  display: flex;
+  flex: 1 1;
+  flex-direction: column;
+  width: 100%;
+
+  &__photo_banners {
+    width: 100%;
+    height: 670px;
+    margin-bottom: 48px;
+
+    display: flex;
+    flex-direction: row;
+  }
+
+  &__info_banners {
+    width: 100%;
+    height: 220px;
+    display: flex;
+
+    &__banner {
+      width: 100%;
+      height: 100%;
+      background-repeat: no-repeat;
+      position: relative;
+
+      &__1 {
+        background-image: url("../../assets/svg/burgundy-bg-1.svg");
+      }
+
+      &__2 {
+        background-image: url("../../assets/svg/burgundy-bg-2.svg");
+      }
+
+      &__3 {
+        background-image: url("../../assets/svg/burgundy-bg-3.svg");
+      }
+
+      &__title {
+        position: absolute;
+        font-size: 24px;
+        font-weight: 300;
+
+        &__1 {
+          top: 58px;
+          left: 20px;
+        }
+
+        &__2 {
+          color: $white;
+          top: 125px;
+          left: 50%;
+          transform: translate(-50%);
+        }
+
+        &__3 {
+          right: 5px;
+          top: 59px;
+        }
+      }
+
+      &__text {
+        position: absolute;
+        font-weight: 300;
+        font-size: 14px;
+
+        &__1 {
+          top: 143px;
+          left: 21px;
+        }
+
+        &__2 {
+          text-wrap: nowrap;
+          color: $white;
+          top: 180px;
+          left: 50%;
+          transform: translate(-50%);
+        }
+
+        &__3 {
+          top: 144px;
+          right: 7px;
+        }
+      }
+    }
+  }
+}
+
+.big_banner {
+  position: relative;
+  width: 100%;
+  margin-right: 31px;
+  flex: 1;
+  overflow: hidden;
+
+  &__text {
+    font-size: 36px;
+    font-weight: 800;
+    line-height: 50px;
+    letter-spacing: 0%;
+    text-align: left;
+    opacity: 0.8;
+
+    width: 100%;
+    position: absolute;
+    left: 230px;
+    top: 44px;
+  }
+
+  &__img {
+    object-fit: cover;
+  }
+}
+
+.quadruple_banners {
+  width: 100%;
+  max-width: calc(100% - 21px);
+  display: flex;
+  flex-wrap: wrap;
+  flex-grow: 1;
+  flex: 1;
+  gap: 22px;
+
+  &__banner {
+    position: relative;
+    width: calc(50% - 11px);
+    height: calc(50% - 11px);
+    overflow: hidden;
+
+    &__present_basket {
+      background: rgb(255, 219, 107);
+    }
+
+    &__roses_box {
+      background-image: url("../../assets/img/wall-bg.jpg");
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+    }
+
+    &__image {
+      min-width: 100%;
+      min-height: 100%;
+      object-fit: cover;
+
+      &__png {
+        margin-left: 80px;
+      }
+    }
+
+    &__text {
+      font-size: 36px;
+      font-weight: 800;
+      line-height: 50px;
+      letter-spacing: 0%;
+      text-align: left;
+      opacity: 0.8;
+
+      width: 100%;
+      position: absolute;
+      left: 10px;
+      top: 10px;
+    }
+  }
+}
+
+.big_banner__text {
+  color: black;
+}
+
+.big_banner__text .white_text {
+  color: $white;
+}
