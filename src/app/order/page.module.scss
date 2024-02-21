@@ -1,0 +1,25 @@
+.order {
+  display: flex;
+  justify-content: center;
+  // align-items: center;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  gap: 20px;
+
+  &__first_group {
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+
+    &__contacts {
+      display: flex;
+      gap: 20px;
+    }
+  }
+
+  &__second_group {
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+  }
+}

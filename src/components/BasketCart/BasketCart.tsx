@@ -11,7 +11,7 @@ const BasketCart = () => {
       <Image className={s.basket__image} src={flowerImage} alt="Basket" />
       <span className={s.basket__name}> 25 желтых тюльпанов </span>
       <span className={s.basket__price}> 795 ₴ </span>
-      <Counter />
+      <Counter fontSize={18} />
       <span className={s.basket__total}> 795 ₴ </span>
       <button className={s.basket__remove}>
         <Image
