@@ -1,15 +1,28 @@
 @import "../../utils/vars.scss";
+@import "../../utils/mixin.scss";
 
-.order_score {
+.basket {
   &__order {
-    width: 415px;
-    height: 450px;
+    padding: 20px;
+    gap: 70px;
+    width: 100%;
+
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    align-items: center;
+    // align-items: center;
 
     border: 1px solid $burgundy;
+
+    @include min-width(small) {
+      width: 70%;
+      padding: 20px 63px;
+    }
+
+    @media (min-width: 1200px) {
+      width: 415px;
+      height: 450px;
+    }
   }
 
   &__title {
@@ -18,13 +31,14 @@
     font-weight: 700;
     line-height: 18px;
     letter-spacing: 0%;
-    text-align: left;
+    text-align: center;
   }
 
   &__info {
     display: flex;
-    justify-content: space-between;
-    gap: 150px;
+    justify-content: space-around;
+    // gap: 150px;
+    gap: 30px;
 
     &__container {
       display: flex;
@@ -49,7 +63,9 @@
 
   &__total {
     display: flex;
-    gap: 110px;
+    // gap: 110px;
+    justify-content: space-around;
+    gap: 30px;
 
     &__text {
       color: $main-gray;

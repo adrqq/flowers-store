@@ -12,9 +12,9 @@ export default function OrderSenderContacts(props: OrderSenderContactsProps) {
       <span className={s.order_contacts__text}>1. Контакти отправника</span>
 
       <div className={s.order_contacts__list}>
-        <OrderInputText text="Імя" type={InputType.text} />
-        <OrderInputText text="Телефон" type={InputType.tel} />
-        <OrderInputText text="Email" type={InputType.text} />
+        <OrderInputText  width={415} text="Імя" type={InputType.text} />
+        <OrderInputText  width={415} text="Телефон" type={InputType.tel} />
+        <OrderInputText  width={415} text="Email" type={InputType.text} />
       </div>
     </div>
   );

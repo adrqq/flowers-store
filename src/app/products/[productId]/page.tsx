@@ -6,6 +6,8 @@ import FlowerButton from "@/UI/FlowerButton/FlowerButton";
 import OrderInputText from "@/UI/OrderInputText/page";
 import { InputType } from "@/models/InputType";
 
+import flower from "@/assets/img/bouquet-rose.png";
+
 const ProductCard = ({
   params,
 }: {
@@ -15,7 +17,25 @@ const ProductCard = ({
 }) => {
   return (
     <div className={s.product_card}>
-      <div className={s.product_card__left}>fsffsfss</div>
+      <div className={s.product_card__left}>
+        <div className={s.product_card__wrapper__big}>
+          <Image className={s.product_card__img__big} src={flower} alt="product-card"  />
+        </div>
+
+        <div className={s.product_card__wrapper__flex}>
+          <div className={s.product_card__wrapper__small}>
+            <Image src={flower} alt="product-card" width={122} height={170} />
+          </div>
+
+          <div className={s.product_card__wrapper__small}>
+          <Image src={flower} alt="product-card" width={122} height={170} />
+          </div>
+
+          <div className={s.product_card__wrapper__small}>
+          <Image src={flower} alt="product-card" width={122} height={170} />
+          </div>
+        </div>
+      </div>
 
       <div className={s.product_card__right}>
         <div className={s.product_card__category}>
@@ -79,8 +99,8 @@ const ProductCard = ({
         </span>
 
         <div className={s.product_card__fast_order}>
-          <div className={s.product_card__fast_order__input}> 
-          <OrderInputText type={InputType.text} text="Номер телефона" />
+          <div className={s.product_card__fast_order__input}>
+            <OrderInputText type={InputType.text} text="Номер телефона" />
           </div>
 
           <div className={s.product_card__fast_order__button}>
@@ -88,13 +108,22 @@ const ProductCard = ({
           </div>
         </div>
 
-        <div>
+        <div className={s.product_card__review}>
           <span>Доставка</span>
 
           <span>Опис</span>
 
           <span>Відгуки</span>
         </div>
+
+        <span className={s.product_card__review__text}>
+          Тюльпан - символ любви, весеннего обновления, счастья, теплой и
+          солнечной погоды и хорошего приподнятого настроения! Тюльпан
+          отличается элегантностью форм и изысканностью линий. Если Вы
+          подбираете букет цветов для близкого, дорогого человека, коллеге по
+          работе, то, как нельзя, кстати, придутся нежные чарующие тюльпаны.
+          Преподнося тюльпаны Вы дарите частичку легкого и весеннего настроения!
+        </span>
       </div>
     </div>
   );

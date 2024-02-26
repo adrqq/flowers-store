@@ -2,12 +2,14 @@
 
 .order_contacts {
   border: 1px solid $burgundy;
-  // width: 480px;
-  // height: 574px;
   display: flex;
-  flex-direction: column;
   padding: 40px;
   align-items: center;
+
+
+  flex-direction: column;
+
+
   gap: 40px;
 
   &__text {

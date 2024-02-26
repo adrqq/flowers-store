@@ -16,11 +16,11 @@ export default function OrderScore(props: OrderScoreProps) {
             25 желтых тюльпанов
           </span>
 
-          <div className={s.order_score__info__couple}>
-            <span>2</span>
+          {/* <div className={s.order_score__info__couple}> */}
+          <span>2</span>
 
-            <span className={s.order_score__info__price}>1558 ₴</span>
-          </div>
+          <span className={s.order_score__info__price}>1558 ₴</span>
+          {/* </div> */}
         </div>
 
         <div className={s.order_score__info}>
@@ -29,21 +29,21 @@ export default function OrderScore(props: OrderScoreProps) {
             25 розовых пионовидных роз
           </span>
 
-          <div className={s.order_score__info__couple}>
-            <span>2</span>
+          {/* <div className={s.order_score__info__couple}> */}
+          <span>2</span>
 
-            <span className={s.order_score__info__price}>1558 ₴</span>
-          </div>
+          <span className={s.order_score__info__price}>1558 ₴</span>
+          {/* </div> */}
         </div>
 
         <div className={s.order_score__info}>
           <span className={s.order_score__info__text}> Мечтательница</span>
 
-          <div className={s.order_score__info__couple}>
-            <span>2</span>
+          {/* <div className={s.order_score__info__couple}> */}
+          <span>2</span>
 
-            <span className={s.order_score__info__price}>1558 ₴</span>
-          </div>
+          <span className={s.order_score__info__price}>1558 ₴</span>
+          {/* </div> */}
         </div>
       </div>
 

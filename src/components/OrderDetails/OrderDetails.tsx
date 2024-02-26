@@ -30,9 +30,14 @@ export default function OrderDetails(props: OrderDetailsProps) {
           </div>
         </div>
 
-        <OrderInputText text="Привід для листівки" type={InputType.text} />
+        <OrderInputText
+          width={415}
+          text="Привід для листівки"
+          type={InputType.text}
+        />
 
         <OrderInputText
+          width={415}
           // placeholder="до 70 символів"
           text="Текст листівки"
           type={InputType.text}

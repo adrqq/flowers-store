@@ -19,9 +19,9 @@ export default function OrderContacts(props: OrderContactsProps) {
 
       <div className={s.order_contacts__info}>
         <div className={s.order_contacts__info__left}>
-          <OrderInputText text={"Імя отримувача"} type={InputType.text}  />
+          <OrderInputText  width={415} text={"Імя отримувача"} type={InputType.text}  />
 
-          <OrderInputText text={"Телефон"} type={InputType.tel} />
+          <OrderInputText  width={415} text={"Телефон"} type={InputType.tel} />
 
           <DatePicker />
         </div>
@@ -33,11 +33,11 @@ export default function OrderContacts(props: OrderContactsProps) {
 
           <OrderInputTime text="Час доставки" /> */}
 
-          <OrderInputText text={"Регіон"} type={InputType.text} disabled={true} value={"Ужгород"} />
+          <OrderInputText width={415} text={"Регіон"} type={InputType.text} disabled={true} value={"Ужгород"} />
 
-          <OrderInputText text='Адрес' type={InputType.text} />
+          <OrderInputText width={415} text='Адрес' type={InputType.text} />
 
-          <OrderInputText text='Час доставки' type={InputType.time} />
+          <OrderInputText width={415} text='Час доставки' type={InputType.time} />
         </div>
       </div>
     </div>

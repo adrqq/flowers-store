@@ -1,15 +1,22 @@
 @import "../../utils/vars.scss";
+@import "../../utils/mixin.scss";
 
 .order_contacts {
+  flex-direction: column;
+
   padding: 40px;
   display: flex;
-  flex-direction: column;
-  max-height: 400px;
-  max-width: 1100px;
+  // max-height: 400px;
+  // max-width: 1100px;
 
   border: 1px solid rgb(149, 109, 132);
 
   gap: 40px;
+
+  // @media (max-width: 2000px) {
+  //   max-width: none;
+  //   max-height: none;
+  // }
 
   &__title {
     color: $main-gray;
@@ -20,9 +27,19 @@
   }
 
   &__info {
+    flex-direction: column;
+
     display: flex;
     justify-content: space-between;
     gap: 40px;
+
+    // @media (max-width: 2000px) {
+    //   flex-direction: column;
+    // }
+
+    @include min-width(medium) {
+      flex-direction: row;
+    }
 
     &__left {
       display: flex;

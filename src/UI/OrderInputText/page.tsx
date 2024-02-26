@@ -16,7 +16,7 @@ type OrderInputProps = {
   id?: string;
   autoComplete?: boolean;
   required?: boolean;
-  width?: number;
+  width: number;
 };
 
 const OrderInputText = ({
