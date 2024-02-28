@@ -34,7 +34,7 @@ function CardItem() {
           <button className={s.card__button}>
             <span className={s.card__button__text}>Быстрый заказ</span>
 
-            <div className={s.underline}/>
+            <div className={s.underline} />
           </button>
         </div>
       </div>

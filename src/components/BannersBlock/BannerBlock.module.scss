@@ -1,7 +1,6 @@
 @import "../../utils/vars.scss";
 
 .bb {
-  margin-bottom: 115px;
   display: flex;
   flex: 1 1;
   flex-direction: column;
@@ -20,11 +19,12 @@
     width: 100%;
     height: 220px;
     display: flex;
+    gap: 30px;
 
     &__banner {
       width: 100%;
-      height: 100%;
       background-repeat: no-repeat;
+      background-size: 100% 220px;
       position: relative;
 
       &__1 {

@@ -1,0 +1,27 @@
+@import "../../utils/vars.scss";
+
+.socials_link {
+  display: block;
+  border-radius: 50%;
+  background: $burgundy;
+
+  background-repeat: no-repeat;
+  background-position: center;
+  object-fit: cover;
+
+  &__viber {
+    background-image: url("../../assets/svg/viber-white.svg");
+  }
+
+  &__insta {
+    background-image: url("../../assets/svg/insta-white.svg");
+  }
+
+  &__tg {
+    background-image: url("../../assets/svg/tg-white.svg");
+  }
+
+  &__fb {
+    background-image: url("../../assets/svg/fb-white.svg");
+  }
+}

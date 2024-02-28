@@ -1,0 +1,63 @@
+@import "../../utils/vars.scss";
+
+.swiper {
+  width: 100%;
+  height: 100%;
+
+  &__slider {
+    width: 100%;
+    height: 1200px;
+    display: flex;
+    margin-left: auto;
+    display: flex;
+    flex-direction: row;
+
+    &__slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  &__head {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+    gap: 20px;
+
+    &__title {
+      display: flex;
+      justify-self: center;
+      color: $main-gray;
+      font-size: 48px;
+      font-weight: 700;
+      line-height: 18px;
+      letter-spacing: 0%;
+      text-align: center;
+    }
+
+    &__nav {
+      position: absolute;
+      right: 10px;
+      top: 5px;
+
+      &__button {
+        height: auto;
+        width: auto;
+
+        &__icon {
+          &__right {
+            transform: rotate(180deg);
+          }
+        }
+      }
+    }
+  }
+}

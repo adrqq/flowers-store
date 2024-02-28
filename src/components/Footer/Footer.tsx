@@ -1,6 +1,6 @@
 import Image from "next/image";
 import s from "./Footer.module.scss";
-import flower from "@/assets/img/flower-logo-removebg.png";
+import flower from "@/assets/svg/site-logo.svg";
 import Link from "next/link";
 
 export type FooterProps = {

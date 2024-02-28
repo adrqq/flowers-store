@@ -2,10 +2,12 @@ import s from "./Header.module.scss";
 import Image from "next/image";
 import Link from 'next/link'
 
-import siteLogo from "@/assets/img/flower-logo.png";
+import siteLogo from "@/assets/svg/site-logo.svg";
 import cartLogo from "@/assets/svg/cart-gray.svg";
 import DropdownButton from "@/UI/DropdownButton/DropdownButton";
 import { Category } from "@/types/Category";
+import SocialsLink from "@/UI/SocialsLink/SocialsLink";
+import { MediaType } from "@/types/MediaType";
 
 export type HeaderProps = {
   // props go here
@@ -112,24 +114,24 @@ export default function Header(props: HeaderProps) {
 
       <div className={s.header__buttons}>
         <div className={s.header__buttons__socials}>
-          <Link
-            href={"https://google.com"}
-            className={`${s.social_button} ${s.social_button__viber}`}
+          <SocialsLink
+            size={40}
+            media={MediaType.Viber}
           />
 
-          <Link
-            href={"https://google.com"}
-            className={`${s.social_button} ${s.social_button__insta}`}
+          <SocialsLink
+            size={40}
+            media={MediaType.Insta}
           />
 
-          <Link
-            href={"https://google.com"}
-            className={`${s.social_button} ${s.social_button__tg}`}
+          <SocialsLink
+            size={40}
+            media={MediaType.Tg}
           />
 
-          <Link
-            href={"https://google.com"}
-            className={`${s.social_button} ${s.social_button__fb}`}
+          <SocialsLink
+            size={40}
+            media={MediaType.Fb}
           />
         </div>
 
