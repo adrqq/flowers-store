@@ -1,4 +1,4 @@
-@import '../../utils/vars.scss';
+@import "../../utils/vars.scss";
 
 $gray: #999999;
 $dark-gray: #333333;
@@ -7,20 +7,20 @@ $blue: #0086e4;
 $primary-color: $burgundy;
 $border-color: #dddddd;
 
-
 // Typography
-$body-font-size: 14px;
+// $body-font-size: 26px;
 $body-color: $dark-gray;
 
+// height: 59px;
+
 // Input
-$input-height: 40px;
+$input-height: 63px;
 
 // Button
 $button-height: $input-height;
 
 .input__group {
-  margin: 100px;
-
+  // margin: 100px;
   position: relative;
   &__label {
     display: block;
@@ -29,7 +29,7 @@ $button-height: $input-height;
     // to keep the position center
     line-height: $input-height;
     color: #aaa;
-    left: 5px;
+    left: 8px;
     padding: 0 5px;
     transition: line-height 200ms ease-in-out, font-size 200ms ease-in-out,
       top 200ms ease-in-out;
@@ -37,7 +37,9 @@ $button-height: $input-height;
     pointer-events: none;
   }
   &__input {
-    width: 100%;
+    font-size: 16px;
+
+    width: 415px;
     height: $input-height;
     border: 1px solid $border-color;
     border-radius: 3px;
@@ -51,7 +53,7 @@ $button-height: $input-height;
         background-color: white;
         line-height: 10px;
         opacity: 1;
-        font-size: 10px;
+        font-size: 14px;
         top: -5px;
       }
     }

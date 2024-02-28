@@ -6,9 +6,10 @@ import { FC } from "react";
 
 type FlowerButtonProps = {
   text?: string;
+  width?: number;
 };
 
-const FlowerButton: FC<FlowerButtonProps> = ({ text = "Заказать" }) => {
+const FlowerButton: FC<FlowerButtonProps> = ({ text = "Заказать", width = 177 }) => {
   return (
     <button className={s.button}>
       <span className={s.button__text}>{text}</span>

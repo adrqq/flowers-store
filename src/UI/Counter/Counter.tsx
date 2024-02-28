@@ -7,9 +7,9 @@ import arrow from "@/assets/svg/arrow-gray.svg";
 import { useState } from "react";
 
 export type CounterProps = {
-  // props go here
+  fontSize: number;
 };
-export default function Counter(props: CounterProps) {
+export default function Counter({fontSize}: CounterProps) {
   const [count, setCount] = useState(1);
 
   const handleMinus = () => {
@@ -37,7 +37,7 @@ export default function Counter(props: CounterProps) {
         />
       </button>
 
-      <span className={s.counter__count}>{count}</span>
+      <span style={{ fontSize: `${fontSize}px` }} className={s.counter__count}>{count}</span>
 
       <button onClick={handlePlus} className={s.counter__button}>
         <Image

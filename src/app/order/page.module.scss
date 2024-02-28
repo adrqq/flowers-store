@@ -1,0 +1,65 @@
+@import "../../utils/mixin.scss";
+
+.order {
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin-bottom: 100px;
+  gap: 20px;
+
+  flex-direction: column;
+  // width: fit-content;
+
+  @include min-width(medium) {
+    flex-direction: column;
+    // align-items: normal;
+    // width: fit-content;
+  }
+
+  @include min-width(large) {
+    flex-direction: row;
+    align-items: normal;
+    // width: fit-content;
+  }
+
+  &__first_group {
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+
+    &__contacts {
+      flex-direction: column;
+
+      display: flex;
+      gap: 20px;
+
+      @include min-width(medium) {
+        flex-direction: row;
+      }
+
+
+      // @include min-width(large) {
+      //   flex-direction: column;
+      // }
+    }
+  }
+
+  &__second_group {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    flex-direction: column;
+
+    @include min-width(medium) {
+      flex-direction: row;
+    }
+
+    @include min-width(large) {
+      flex-direction: column;
+    }
+  }
+}

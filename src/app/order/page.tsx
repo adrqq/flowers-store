@@ -1,14 +1,29 @@
-import OrderInput from "@/UI/OrderInput/page";
+import OrderScore from "@/components/OrderScore";
 import s from "./page.module.scss";
-import DatePicker from "@/UI/DatePicker";
+import OrderContacts from "@/components/OrderContacts";
+import OrderSenderContacts from "@/components/OrderSenderContacts";
+import OrderCoupons from "@/components/OrderCoupons";
+import OrderDetails from "@/components/OrderDetails";
 
 const OrderPage = () => {
   return (
-    <div className={s.order}>
-      <OrderInput />
+    <main className={s.order}>
+      <div className={s.order__first_group}>
+        <OrderContacts />
 
-      <DatePicker />
-    </div>
+        <div className={s.order__first_group__contacts}>
+          <OrderSenderContacts />
+
+          <OrderDetails />
+        </div>
+      </div>
+
+      <div className={s.order__second_group}>
+        <OrderScore />
+
+        <OrderCoupons />
+      </div>
+    </main>
   );
 };
 

@@ -1,0 +1,39 @@
+@import '../../utils/vars.scss';
+
+.order_details {
+  border: 1px solid $burgundy;
+  // width: 480px;
+  // height: 574px;
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+  align-items: center;
+  gap: 40px;
+
+  &__text {
+    color: $main-gray;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 18px;
+    align-self: flex-start;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+  
+  &__postcard {
+    margin-left: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+
+    &__wrapper {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+  }
+}
