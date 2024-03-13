@@ -39,7 +39,8 @@ $button-height: $input-height;
   &__input {
     font-size: 16px;
 
-    width: 415px;
+    width: 100%;
+    // width: 415px;
     height: $input-height;
     border: 1px solid $border-color;
     border-radius: 3px;

@@ -8,7 +8,7 @@ const BasketPage = () => {
     <main className={s.basket}>
       <div className={s.basket}>
         <div className={s.basket__list}>
-          <span className={`${s.basket__naming_flower} ${s.basket__naming}`}>
+          {/* <span className={`${s.basket__naming_flower} ${s.basket__naming}`}>
             Назва
           </span>
 
@@ -22,7 +22,7 @@ const BasketPage = () => {
 
           <span className={`${s.basket__naming_total} ${s.basket__naming}`}>
             Разом
-          </span>
+          </span> */}
 
           <BasketCart />
 

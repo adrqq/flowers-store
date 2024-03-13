@@ -27,7 +27,7 @@ const OrderInputText = ({
   value = "",
   autoComplete = false,
   required = true,
-  width = 321,
+  // width = 321,
 }: OrderInputProps) => {
   return (
     <div className={styles.input__group}>
@@ -40,7 +40,7 @@ const OrderInputText = ({
         autoComplete={autoComplete ? '' : "off"}
         required={required}
 
-        style={{ width: `${width}px` }}
+        // style={{ width: `${width}px` }}
       />
       <label className={styles.input__group__label} htmlFor="username">
         {text}

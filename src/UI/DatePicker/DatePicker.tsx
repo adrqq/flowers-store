@@ -51,7 +51,7 @@ const theme = createTheme({
     MuiInputBase: {
       styleOverrides: {
         root: {
-          width: "415px",
+          width: "100%",
           height: "63px",
           overflow: "visible",
         },
