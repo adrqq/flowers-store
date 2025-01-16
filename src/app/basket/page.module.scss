@@ -1,25 +1,17 @@
 @import "../../utils/mixin.scss";
 
 .basket {
-  // margin-bottom: 100px;
 
   display: flex;
   justify-content: center;
-
-  // align-items: center;
   flex-direction: column;
-
   gap: 15px;
-
-  // @include min-width(medium) {
-  //   flex-direction: row;
-  //   align-items: normal;
-  // }
 
   @media (min-width: 1200px) {
     flex-direction: row;
     align-items: normal;
     gap: unset;
+    padding: 20px;
   }
 
   &__container {

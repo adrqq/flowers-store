@@ -1,7 +1,7 @@
 import BasketCart from "@/components/BasketCart/BasketCart";
 import s from "./page.module.scss";
 import FlowerButton from "@/UI/FlowerButton/FlowerButton";
-import BasketOrder from "@/components/BasketOrder";
+import BasketOrder from "@/components/BasketOrder/BasketOrder";
 
 const BasketPage = () => {
   return (
