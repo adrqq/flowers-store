@@ -24,12 +24,12 @@
   }
 
   &__info {
+    display: flex;
     padding: 25px;
     flex-direction: column;
 
     position: relative;
-
-    gap: 30px;
+    gap: 20px;
   }
 
   &__description {
