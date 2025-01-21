@@ -12,48 +12,15 @@ const theme = createTheme({
     },
   },
   components: {
-    MuiOutlinedInput: {
-      styleOverrides: {
-        root: {
-          "&:hover .MuiOutlinedInput-notchedOutline": {
-            borderColor: "#956d84",
-            borderWidth: "1px",
-          },
-          "& .MuiOutlinedInput-input": {
-            color: "#dddddd",
-            fontWeight: 300,
-          },
-          "&.Mui-focused .MuiOutlinedInput-input": {
-            color: "#956d84",
-            fontWeight: 300,
-          },
-          "&.Mui-focused .MuiOutlinedInput-notchedOutline": {
-            borderColor: "#956d84",
-            borderWidth: "1px",
-          },
-        },
-      },
-    },
-    MuiFormLabel: {
-      styleOverrides: {
-        root: {
-          color: "#dddddd",
-          fontWeight: 300,
-          transform: "translate(14px, 18px) scale(1)",
-          fontSize: "1.2rem",
-          lineHeight: "2.4375em",
-          "&.MuiInputLabel-shrink": {
-            transform: "translate(7px, -19px) scale(0.75)",
-          },
-        },
-      },
-    },
     MuiInputBase: {
       styleOverrides: {
         root: {
           width: "100%",
           height: "63px",
           overflow: "visible",
+          "@media (max-width: 400px)": {
+            maxWidth: "clamp(165px, 50vw, 300px)", // Gradually decrease width
+          },
         },
         input: {
           fontSize: "1.3rem",
@@ -66,17 +33,6 @@ const theme = createTheme({
 });
 
 export default function TextFieldSlotProps() {
-  window.onload = function () {
-    const elements2 = document.getElementsByClassName(
-      "css-4jnixx-MuiStack-root"
-    );
-    for (let i = 0; i < elements2.length; i++) {
-      (elements2[i] as HTMLElement).style.padding = "0";
-      (elements2[i] as HTMLElement).style.overflow = "visible";
-      (elements2[i] as HTMLElement).style.fontFamily = "inherit";
-    }
-  };
-
   const handleDateChange = (date: any) => {
     console.log(date);
   };
@@ -84,7 +40,16 @@ export default function TextFieldSlotProps() {
   return (
     <ThemeProvider theme={theme}>
       <LocalizationProvider dateAdapter={AdapterDayjs}>
-        <DemoContainer components={["DatePicker"]}>
+        <DemoContainer
+          components={["DatePicker"]}
+          sx={{
+            "& .MuiStack-root": {
+              padding: "0", // Remove extra padding
+              overflow: "visible",
+              fontFamily: "inherit",
+            },
+          }}
+        >
           <DatePicker
             label="Дата доставки"
             slotProps={{ textField: { size: "small" } }}

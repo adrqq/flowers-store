@@ -1,0 +1,152 @@
+@import "../../utils/vars.scss";
+
+.cartModal {
+  &__overlay {
+    position: fixed;
+    top: 0px;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 998;
+  }
+
+  &__content {
+    position: absolute;
+    top: 240px;
+    /* Adjusted to place it under the basket button */
+    right: 20px;
+    /* Adjust as needed to align with the button */
+    width: 360px;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+    padding: 20px;
+    z-index: 999;
+  }
+
+  &__title {
+    color: $burgundy;
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    text-align: center;
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      right: -40px;
+      transform: translateY(-50%);
+      width: 1px;
+      height: 60%;
+      background: $text-light;
+    }
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid $main-gray;
+
+    &:last-child {
+      border-bottom: none;
+    }
+
+    &__image {
+      width: 60px;
+      height: 60px;
+      object-fit: cover;
+      border-radius: 8px;
+      margin-right: 15px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    &__details {
+      flex-grow: 1;
+
+      &__name {
+        font-size: 16px;
+        font-weight: 600;
+        color: $text-dark;
+        margin-bottom: 5px;
+      }
+
+      &__price {
+        font-size: 14px;
+        color: $text-light;
+      }
+    }
+
+    &__deleteBtn {
+      background-color: transparent;
+      border: 1px solid $burgundy;
+      color: $burgundy;
+      padding: 6px 12px;
+      border-radius: 4px;
+      cursor: pointer;
+      font-weight: 600;
+      transition: background-color 0.3s;
+
+      &:hover {
+        background-color: $burgundy;
+        color: #fff;
+      }
+    }
+  }
+
+  &__footer {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__total {
+      font-size: 18px;
+      font-weight: 700;
+      color: $text-dark;
+      margin-bottom: 15px;
+    }
+  }
+
+  &__empty {
+    font-size: 16px;
+    color: $text-light;
+    text-align: center;
+    margin: 20px 0;
+  }
+
+  &__closeBtn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 24px;
+    height: 24px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    z-index: 1000;
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%) rotate(45deg);
+      width: 16px;
+      height: 2px;
+      background-color: $text-dark;
+    }
+
+    &::after {
+      transform: translate(-50%, -50%) rotate(-45deg);
+    }
+  }
+}
+
+.cartModal__total {
+  margin-bottom: 20px;
+}

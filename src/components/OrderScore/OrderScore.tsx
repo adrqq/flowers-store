@@ -4,6 +4,7 @@ import s from "./OrderScore.module.scss";
 export type OrderScoreProps = {
   // props go here
 };
+
 export default function OrderScore(props: OrderScoreProps) {
   return (
     <div className={s.order_score__order}>

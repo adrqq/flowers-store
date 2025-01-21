@@ -29,7 +29,10 @@ export default function BasketOrder(props: BasketOrderProps) {
         <span className={s.basket__total__price}>1558 ₴</span>
       </div>
 
-      <FlowerButton text="Оформити замовлення" />
+      <div className={s.basket__button}>
+        <FlowerButton text="Оформити замовлення" />
+
+      </div>
     </div>
   );
 }

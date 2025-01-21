@@ -8,6 +8,7 @@ import DropdownButton from "@/UI/DropdownButton/DropdownButton";
 import { Category } from "@/types/Category";
 import SocialsLink from "@/UI/SocialsLink/SocialsLink";
 import { MediaType } from "@/types/MediaType";
+import HeaderCart from "./HeaderCart/HeaderCart";
 
 export type HeaderProps = {
   // props go here
@@ -142,17 +143,7 @@ export default function Header(props: HeaderProps) {
           +38 (099) 043 58 79
         </a>
 
-        <div className={s.header__buttons__order_info}>
-          <Image
-            src={cartLogo}
-            alt="cart"
-            className={s.header__buttons__order_info__cart}
-          />
-
-          <p className={s.header__buttons__order_info__price}>
-            ₴ 1 520
-          </p>
-        </div>
+        <HeaderCart />
       </div>
     </header>
   );

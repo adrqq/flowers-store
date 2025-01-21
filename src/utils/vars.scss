@@ -4,9 +4,13 @@ $black: #000000;
 $main-gray: #333333;
 $elegant-gray: rgb(130, 130, 130);
 
-$burgundy: #956d84;
 $light-pink: #fbf9fa;
 
 $light-gray: #bdbdbd;
 
-// #956D84
+$burgundy: #956d84; // Main theme color for the buttons and title.
+$text-dark: #333333; // Dark text color for item names and other key details.
+$text-light: #777777; // Lighter text color for prices and secondary details.
+$main-gray: #a0a0a0; // Neutral gray color for secondary buttons and background.
+$shadow-color: rgba(0, 0, 0, 0.1); // Shadow color for modal.
+$overlay-bg: rgba(0, 0, 0, 0.25); // Overlay background color.
