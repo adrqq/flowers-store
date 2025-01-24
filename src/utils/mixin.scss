@@ -1,6 +1,7 @@
 $breakpoint-xs: 440px;
 $breakpoint-small: 820px;
 $breakpoint-medium: 1024px;
+$breakpoint-medium-large: 1350px;
 $breakpoint-large: 1600px;
 $breakpoint-extra-large: 1920px;
 
@@ -19,6 +20,12 @@ $breakpoint-extra-large: 1920px;
 
   @else if ($breakpoint ==medium) {
     @media (min-width: $breakpoint-medium) {
+      @content;
+    }
+  }
+
+  @else if ($breakpoint ==medium-large) {
+    @media (min-width: $breakpoint-medium-large) {
       @content;
     }
   }

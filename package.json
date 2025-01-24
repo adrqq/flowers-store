@@ -19,7 +19,7 @@
     "react-dom": "^18",
     "react-id-swiper": "^4.0.0",
     "sass": "^1.70.0",
-    "swiper": "^11.0.6"
+    "swiper": "^11.2.1"
   },
   "devDependencies": {
     "@types/node": "^20",
