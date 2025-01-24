@@ -21,7 +21,7 @@ const ProductCard = ({
 
       <FlowersPhoto />
 
-      <PageInfo />
+      {/* <PageInfo /> */}
     </div>
   );
 };
