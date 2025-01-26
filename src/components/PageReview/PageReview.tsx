@@ -6,7 +6,7 @@ import s from "./PageReview.module.scss";
 export default function PageInfo() {
   const [openIndex, setOpenIndex] = useState(1);
   const tabs = [
-    { label: "Доставка", content: "Some text about delivery..." },
+    { label: "Доставка", content: "Some text about deliverySome text about deliverySome text about deliverySome text about deliverySome text about deliverySome text about delivery Some text about deliverySome text about delivery Some text about delivery" },
     { label: "Опис", content: "Some text about product description..." },
     { label: "Відгуки", content: "Some text about feedback..." },
   ];

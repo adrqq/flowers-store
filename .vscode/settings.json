@@ -1,8 +1,5 @@
 {
   "cSpell.language": "en,uk",
-  "spellright.documentTypes": [
-    "markdown",
-    "latex",
-    "plaintext"
-  ]
+  "spellright.documentTypes": ["markdown", "latex", "plaintext"],
+  "cSpell.words": ["тюльпанов"]
 }

@@ -4,13 +4,24 @@
 // ...existing code...
 .product_card {
   &__review {
+
     display: flex;
-    gap: 70px;
-    align-items: flex-start;
+    flex-direction: column;
+    gap: 20px;
+    /* Space between each tab */
+    align-items: center;
+
+    @include min-width(xs) {
+      flex-direction: row;
+      display: flex;
+      gap: 70px;
+      align-items: flex-start;
+    }
 
     &__item {
       cursor: pointer;
       position: relative;
+
 
       span {
         font-size: 18px;
@@ -20,16 +31,68 @@
     }
 
     &__content {
+
+
       margin-top: 8px;
+      /* Add spacing below the label */
       font-size: 16px;
       font-weight: 400;
       color: $main-gray;
-      position: absolute;
-      left: 0;
-      transform: translateY(24px);
-      width: 200px;
+      width: 100%;
+      /* Ensure content spans full width */
+
+      @include min-width(xs) {
+        margin-top: 8px;
+        font-size: 16px;
+        font-weight: 400;
+        color: $main-gray;
+        position: absolute;
+        left: 0;
+        transform: translateY(24px);
+        width: 200px;
+      }
     }
   }
 }
 
 // ...existing code...
+
+// @import "../../utils/mixin.scss";
+// @import "../../utils/vars.scss";
+
+// .product_card {
+//   &__review {
+// display: flex;
+// flex-direction: column;
+// gap: 20px;
+// /* Space between each tab */
+// align-items: flex-start;
+
+//     @include min-width(xs) {
+//       flex-direction: row;
+//     }
+
+//     &__item {
+//       cursor: pointer;
+//       width: 100%;
+//       /* Allow items to take up full width */
+
+//       span {
+//         font-size: 18px;
+//         font-weight: 700;
+//         color: rgb(130, 130, 130);
+//       }
+//     }
+
+// &__content {
+//   margin-top: 8px;
+//   /* Add spacing below the label */
+//   font-size: 16px;
+//   font-weight: 400;
+//   color: $main-gray;
+//   width: 100%;
+//   /* Ensure content spans full width */
+// }
+
+//   }
+// }

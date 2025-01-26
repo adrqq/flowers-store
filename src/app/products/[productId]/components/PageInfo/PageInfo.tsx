@@ -9,7 +9,7 @@ import PageReview from '@/components/PageReview/PageReview';
 
 const PageInfo = () => {
   return (
-    <div className={s.product_card__right}>
+    <div className={s.product_card}>
       <div className={s.product_card__category}>
         <span className={s.product_card__category__text}>
           букеты из тулюпанов
@@ -72,31 +72,13 @@ const PageInfo = () => {
 
       <div className={s.product_card__fast_order}>
         <div className={s.product_card__fast_order__input}>
-          <OrderInputText type={InputType.text} text="Номер телефона" width={0} />
+          <OrderInputText type={InputType.text} text="телефон" width={0} />
         </div>
 
         <div className={s.product_card__fast_order__button}>
           <FlowerButton text="замовити" />
         </div>
       </div>
-
-      {/* <div className={s.product_card__review}>
-        <span>Доставка</span>
-
-        <span>Опис</span>
-
-        <span>Відгуки</span>
-      </div>
-
-      <span className={s.product_card__review__text}>
-        Тюльпан - символ любви, весеннего обновления, счастья, теплой и
-        солнечной погоды и хорошего приподнятого настроения! Тюльпан
-        отличается элегантностью форм и изысканностью линий. Если Вы
-        подбираете букет цветов для близкого, дорогого человека, коллеге по
-        работе, то, как нельзя, кстати, придутся нежные чарующие тюльпаны.
-        Преподнося тюльпаны Вы дарите частичку легкого и весеннего настроения!
-      </span> */}
-
       <PageReview />
     </div>
   )
